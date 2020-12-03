@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Sudoku Solver Web Application</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
     <script src="sudoku.js"></script>
     </head>
-    <body>
-    <input type="text" name="name">
-        <input type="submit" onclick="start()">
+    <body style=" background-color: rgba(9, 53, 85, 0.938);";>
+        <div style="font-family: cursive; position:absolute; left: 240px; top: 50px; color: white; ">
+            <h2 style="font-family: cursive; color: white; "> Sudoku Solver</h2>
+            <span style="color: white;">Click on cell to change its value </span>
+        </div>
+        <button style="color: white; background-color: rgb(82, 10, 88);border: 1px solid rgb(40, 66, 182); border-radius: 3px; height: 40px; width: 160px; position: absolute; top: 30%; left:50%" onClick="solve()">
+            Solve Sudoku</button>
+           
     </body>
 </html>
